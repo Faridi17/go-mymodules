@@ -16,12 +16,12 @@ func getCompleteName() (firstName, middleName, lastName string) {
 	return firstName, middleName, lastName
 }
 
-func MathPlus(a, b int) int {
-	return a + b
-}
-
 func getFullName() (string, string) {
 	return "Azka", "Faridi"
+}
+
+func MathPlus(a, b int) int {
+	return a + b
 }
 
 func sumAll(numbers ...int) int {
@@ -32,4 +32,12 @@ func sumAll(numbers ...int) int {
 	}
 
 	return total
+}
+
+func MathDivide(a, b int) any {
+	if b == 0 {
+		return "not definition"
+	} else {
+		return a / b
+	}
 }
